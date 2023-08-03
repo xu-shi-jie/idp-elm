@@ -1,0 +1,37 @@
+name: hyperparameter_tuning
+program: models/train.py
+method: random
+metric:
+  name: val_auc
+  goal: maximize
+parameters:
+  lr:
+    # 0.000025006864796313452
+    values: [0.00002]
+
+  batch_size:
+    values: [8]
+
+  emb_dir:
+    values: ["embs/Rostlab/prot_t5_xl_bfd"]
+  head_type:
+    # values: ["bilstm", "lstm", "bigru", "gru"]
+    values: ["bigru"]
+
+  hidden_size:
+    values: [32]
+  num_layers:
+    values: [1]
+  dropout: #0.42
+    values: [0.4]
+
+  epochs:
+    values: [10000]
+  num_workers:
+    values: [24]
+  seed:
+    values: [42]
+  patience:
+    values: [4]
+  weight_decay: # 0.000054
+    values: [0.00005]

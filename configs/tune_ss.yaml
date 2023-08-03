@@ -1,0 +1,47 @@
+name: hyperparameter_tuning
+program: models/train.py
+method: grid
+metric:
+  name: val_auc
+  goal: maximize
+parameters:
+  lr:
+    values: [0.001]
+
+  batch_size:
+    values: [16]
+
+  emb_dir:
+    values:
+      [
+        "embs/ss/facebook/esm1b_t33_650M_UR50S",
+        "embs/ss/facebook/esm2_t6_8M_UR50D",
+        "embs/ss/facebook/esm2_t12_35M_UR50D",
+        "embs/ss/facebook/esm2_t30_150M_UR50D",
+        "embs/ss/facebook/esm2_t33_650M_UR50D",
+        "embs/ss/facebook/esm2_t36_3B_UR50D",
+        "embs/ss/facebook/esm2_t48_15B_UR50D",
+        "embs/ss/Rostlab/prot_t5_xl_bfd",
+        "embs/ss/Rostlab/prot_t5_xl_half_uniref50-enc",
+      ]
+
+  head_type:
+    # values: ["bilstm", "lstm", "bigru", "gru"]
+    values: ["bilstm", "bigru"]
+
+  hidden_size:
+    values: [256, 512, 1024]
+  num_layers:
+    values: [2, 3]
+  dropout:
+    values: [0.5]
+  epochs:
+    values: [10000]
+  num_workers:
+    values: [24]
+  seed:
+    values: [42]
+  patience:
+    values: [5]
+  weight_decay:
+    values: [0.01]

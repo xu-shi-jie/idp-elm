@@ -1,0 +1,15 @@
+name: esm1b_t33_650M_UR50S
+lr: 0.001
+batch_size: 64
+head_type: bigru
+hidden_size: 64
+num_layers: 2
+dropout: 0.5
+epochs: 10000
+patience: 5
+seed: 42
+num_workers: 1
+weight_decay: 0.01
+mask_ratio: 2
+emb_dir: embs/idp/facebook/esm1b_t33_650M_UR50S
+shortcut: True

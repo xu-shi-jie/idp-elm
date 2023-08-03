@@ -1,0 +1,5 @@
+accelerate
+lightning
+scikit-learn
+transformers
+fair-esm

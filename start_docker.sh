@@ -1,0 +1,1 @@
+docker run --gpus all --name EquipKa -it --network=host --shm-size=64g --rm -v ${PWD}:/workspace  pytorch/pytorch:1.13.1-cuda11.6-cudnn8-devel
