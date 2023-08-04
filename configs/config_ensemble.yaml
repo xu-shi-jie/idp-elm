@@ -1,0 +1,21 @@
+name: ensemble_tuning
+program: models/ensemble.py
+method: random
+metric:
+  name: val_auc
+  goal: maximize
+
+seed: 42
+batch_size: 1
+num_workers: 24
+device: cuda
+head_type: bigru
+weights:
+  esm1b_t33_650M_UR50S: 1.0
+  esm2_t6_8M_UR50D: 1.0
+  esm2_t12_35M_UR50D: 1.0
+  esm2_t30_150M_UR50D: 1.0
+  esm2_t33_650M_UR50D: 1.0
+  esm2_t36_3B_UR50D: 1.0
+  prot_t5_xl_bfd: 1.0
+  prot_t5_xl_half_uniref50-enc: 1.0

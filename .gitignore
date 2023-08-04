@@ -1,0 +1,11 @@
+checkpoints/
+embs/
+lightning_logs/
+wandb/
+weights/
+__pycache__/
+NetSurfP-3.0/
+HumanProteome/
+cdhit/
+tmp/
+others/

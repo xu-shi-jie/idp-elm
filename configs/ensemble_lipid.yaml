@@ -1,0 +1,81 @@
+task: lipid
+seed: 42
+batch_size: 32
+num_workers: 24
+device: cuda
+head_type: bigru
+esm2_t6_8M_UR50D:
+  name: esm2_t6_8M_UR50D
+  lr: 0.001
+  batch_size: 32
+  head_type: bigru
+  hidden_size: 32
+  num_layers: 1
+  dropout: 0.5
+  epochs: 10000
+  patience: 5
+  seed: 42
+  num_workers: 24
+  weight_decay: 0.001
+  mask_ratio: 0.001
+  emb_dir: embs/lipid/facebook/esm2_t6_8M_UR50D
+esm2_t12_35M_UR50D:
+  name: esm2_t12_35M_UR50D
+  lr: 0.001
+  batch_size: 32
+  head_type: bigru
+  hidden_size: 32
+  num_layers: 1
+  dropout: 0.5
+  epochs: 10000
+  patience: 5
+  seed: 42
+  num_workers: 24
+  weight_decay: 0.001
+  mask_ratio: 0.002
+  emb_dir: embs/lipid/facebook/esm2_t12_35M_UR50D
+esm2_t30_150M_UR50D:
+  name: esm2_t30_150M_UR50D
+  lr: 0.003
+  batch_size: 32
+  head_type: bigru
+  hidden_size: 16
+  num_layers: 1
+  dropout: 0.5
+  epochs: 10000
+  patience: 5
+  seed: 42
+  num_workers: 24
+  weight_decay: 0.001
+  mask_ratio: 0.004
+  emb_dir: embs/lipid/facebook/esm2_t30_150M_UR50D
+prot_t5_xl_bfd:
+  name: prot_t5_xl_bfd
+  lr: 0.004
+  batch_size: 32
+  head_type: bigru
+  hidden_size: 64
+  num_layers: 1
+  dropout: 0.5
+  epochs: 10000
+  patience: 5
+  seed: 42
+  num_workers: 24
+  weight_decay: 0.001
+  mask_ratio: 0.004
+  emb_dir: embs/lipid/Rostlab/prot_t5_xl_bfd
+prot_t5_xl_half_uniref50-enc:
+  name: prot_t5_xl_half_uniref50-enc
+  lr: 0.001
+  batch_size: 32
+  head_type: bigru
+  hidden_size: 64
+  num_layers: 1
+  dropout: 0.5
+  epochs: 10000
+  patience: 5
+  seed: 42
+  num_workers: 24
+  weight_decay: 0.001
+  mask_ratio: 0.002
+  emb_dir: embs/lipid/Rostlab/prot_t5_xl_half_uniref50-enc

@@ -1,0 +1,118 @@
+task: idp
+seed: 42
+batch_size: 1
+num_workers: 24
+device: cuda
+head_type: bigru
+esm1b_t33_650M_UR50S:
+  name: esm1b_t33_650M_UR50S
+  lr: 0.004
+  batch_size: 16
+  head_type: bigru
+  hidden_size: 64
+  num_layers: 1
+  dropout: 0.2
+  epochs: 10000
+  patience: 4
+  seed: 42
+  num_workers: 24
+  weight_decay: 0.0001
+  emb_dir: embs/idp/facebook/esm1b_t33_650M_UR50S
+esm2_t6_8M_UR50D:
+  name: esm2_t6_8M_UR50D
+  lr: 0.002
+  batch_size: 32
+  head_type: bigru
+  hidden_size: 256
+  num_layers: 1
+  dropout: 0.6
+  epochs: 10000
+  patience: 4
+  seed: 42
+  num_workers: 24
+  weight_decay: 0.0001
+  emb_dir: embs/idp/facebook/esm2_t6_8M_UR50D
+esm2_t12_35M_UR50D:
+  name: esm2_t12_35M_UR50D
+  lr: 0.005
+  batch_size: 8
+  head_type: bigru
+  hidden_size: 64
+  num_layers: 2
+  dropout: 0.4
+  epochs: 10000
+  patience: 4
+  seed: 42
+  num_workers: 24
+  weight_decay: 4e-05
+  emb_dir: embs/idp/facebook/esm2_t12_35M_UR50D
+esm2_t30_150M_UR50D:
+  name: esm2_t30_150M_UR50D
+  lr: 0.0002
+  batch_size: 16
+  head_type: bigru
+  hidden_size: 256
+  num_layers: 1
+  dropout: 0.1
+  epochs: 10000
+  patience: 4
+  seed: 42
+  num_workers: 24
+  weight_decay: 3e-05
+  emb_dir: embs/idp/facebook/esm2_t30_150M_UR50D
+esm2_t33_650M_UR50D:
+  name: esm2_t33_650M_UR50D
+  lr: 0.005
+  batch_size: 8
+  head_type: bigru
+  hidden_size: 64
+  num_layers: 2
+  dropout: 0.4
+  epochs: 10000
+  patience: 4
+  seed: 42
+  num_workers: 24
+  weight_decay: 0.0002
+  emb_dir: embs/idp/facebook/esm2_t33_650M_UR50D
+esm2_t36_3B_UR50D:
+  name: esm2_t36_3B_UR50D
+  lr: 0.002
+  batch_size: 32
+  head_type: bigru
+  hidden_size: 32
+  num_layers: 2
+  dropout: 0.4
+  epochs: 10000
+  patience: 4
+  seed: 42
+  num_workers: 24
+  weight_decay: 0.006
+  emb_dir: embs/idp/facebook/esm2_t36_3B_UR50D
+prot_t5_xl_bfd:
+  name: prot_t5_xl_bfd
+  lr: 0.005
+  batch_size: 8
+  head_type: bigru
+  hidden_size: 64
+  num_layers: 2
+  dropout: 0.8
+  epochs: 10000
+  patience: 4
+  seed: 42
+  num_workers: 24
+  weight_decay: 5e-05
+  emb_dir: embs/idp/Rostlab/prot_t5_xl_bfd
+prot_t5_xl_half_uniref50-enc:
+  name: prot_t5_xl_half_uniref50-enc
+  lr: 0.0002
+  batch_size: 32
+  head_type: bigru
+  hidden_size: 256
+  num_layers: 2
+  dropout: 0.4
+  epochs: 10000
+  patience: 4
+  seed: 42
+  num_workers: 24
+  weight_decay: 0.003
+  emb_dir: embs/idp/Rostlab/prot_t5_xl_half_uniref50-enc
