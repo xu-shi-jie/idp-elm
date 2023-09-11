@@ -8,14 +8,16 @@
 
 (It is recommended to use `start_docker.sh` to create a docker container if you are using Windows. )
 
-For reproducing the results in the paper, please follow the steps below:
+To reproduce the results in the paper, please follow the steps below:
 
 - Run `./train.sh`.
-- After running, you have following options:
-  - [0] Before training models on datasets, you have to encode sequences into high-dimensional representations, for accelerating the training process.
+- After running, you have the following options:
+  - [0] Before training models on datasets, you have to encode sequences into high-dimensional representations, to accelerate the training process.
   - [1] Train secondary structure predictor, which is used as a module in IDP-ELM.
   - [3, 7, 11] Train IDP-ELM and IDR function predictors.
   - Other options are explained as in the script.
+ 
+You can also download the available model checkpoints from Google Drive: https://drive.google.com/file/d/1g-42GQGWFeixYGK7Ei0KrmAtQajxruFZ/view?usp=sharing
 
 ## Help
 
