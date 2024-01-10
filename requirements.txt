@@ -1,0 +1,10 @@
+accelerate
+lightning
+scikit-learn
+transformers[sentencepiece]
+sentencepiece
+fair-esm
+loguru
+wandb
+matplotlib
+seaborn

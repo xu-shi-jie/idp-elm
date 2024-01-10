@@ -1,0 +1,12 @@
+lr: 0.0001
+batch_size: 16
+emb_dir: "embs/ss/facebook/esm1b_t33_650M_UR50S"
+head_type: "bilstm"
+hidden_size: 256
+num_layers: 2
+dropout: 0.1
+epochs: 10000
+num_workers: 24
+seed: 42
+patience: 5
+weight_decay: 0.01

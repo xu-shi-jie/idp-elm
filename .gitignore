@@ -1,0 +1,12 @@
+checkpoints/
+embs/
+lightning_logs/
+wandb/
+__pycache__/
+NetSurfP-3.0/
+HumanProteome/
+tmp/
+others/
+.vscode/
+predictions/
+weights/

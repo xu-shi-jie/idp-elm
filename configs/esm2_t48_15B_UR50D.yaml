@@ -1,0 +1,15 @@
+name: esm2_t48_15B_UR50D
+lr: 0.001
+batch_size: 16
+head_type: bigru
+hidden_size: 256
+num_layers: 2
+dropout: 0.5
+epochs: 10000
+patience: 5
+seed: 42
+num_workers: 1
+weight_decay: 0.001
+mask_ratio: 2
+emb_dir: embs/idp/facebook/esm2_t48_15B_UR50D
+shortcut: True

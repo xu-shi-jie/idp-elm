@@ -1,0 +1,18 @@
+lr: 0.0001
+
+batch_size: 4
+
+emb_dir: "embs/lipid/facebook/esm1b_t33_650M_UR50S"
+
+head_type: "bigru"
+
+hidden_size: 16
+num_layers: 1
+dropout: 0.5
+
+epochs: 10000
+num_workers: 24
+seed: 42
+patience: 5
+weight_decay: 0.001
+mask_ratio: 0.0001

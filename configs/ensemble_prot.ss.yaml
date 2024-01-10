@@ -1,0 +1,142 @@
+task: prot
+seed: 42
+batch_size: 32
+num_workers: 1
+device: cuda
+head_type: bigru
+shortcut: True
+esm1b_t33_650M_UR50S:
+  name: esm1b_t33_650M_UR50S
+  lr: 0.001
+  batch_size: 32
+  head_type: bigru
+  hidden_size: 32
+  num_layers: 1
+  dropout: 0.5
+  epochs: 10000
+  patience: 5
+  seed: 42
+  num_workers: 1
+  weight_decay: 0.01
+  mask_ratio: 0.1
+  emb_dir: embs/rdp/facebook/esm1b_t33_650M_UR50S
+esm2_t6_8M_UR50D:
+  name: esm2_t6_8M_UR50D
+  lr: 0.001
+  batch_size: 8
+  head_type: bigru
+  hidden_size: 32
+  num_layers: 1
+  dropout: 0.5
+  epochs: 10000
+  patience: 5
+  seed: 42
+  num_workers: 1
+  weight_decay: 0.01
+  mask_ratio: 0.1
+  emb_dir: embs/rdp/facebook/esm2_t6_8M_UR50D
+esm2_t12_35M_UR50D:
+  name: esm2_t12_35M_UR50D
+  lr: 0.001
+  batch_size: 32
+  head_type: bigru
+  hidden_size: 16
+  num_layers: 1
+  dropout: 0.5
+  epochs: 10000
+  patience: 5
+  seed: 42
+  num_workers: 1
+  weight_decay: 0.01
+  mask_ratio: 0.1
+  emb_dir: embs/rdp/facebook/esm2_t12_35M_UR50D
+esm2_t30_150M_UR50D:
+  name: esm2_t30_150M_UR50D
+  lr: 0.001
+  batch_size: 16
+  head_type: bigru
+  hidden_size: 64
+  num_layers: 1
+  dropout: 0.5
+  epochs: 10000
+  patience: 5
+  seed: 42
+  num_workers: 1
+  weight_decay: 0.01
+  mask_ratio: 0.1
+  emb_dir: embs/rdp/facebook/esm2_t30_150M_UR50D
+esm2_t33_650M_UR50D:
+  name: esm2_t33_650M_UR50D
+  lr: 0.001
+  batch_size: 16
+  head_type: bigru
+  hidden_size: 32
+  num_layers: 1
+  dropout: 0.5
+  epochs: 10000
+  patience: 5
+  seed: 42
+  num_workers: 1
+  weight_decay: 0.01
+  mask_ratio: 0.1
+  emb_dir: embs/rdp/facebook/esm2_t33_650M_UR50D
+esm2_t36_3B_UR50D:
+  name: esm2_t36_3B_UR50D
+  lr: 0.001
+  batch_size: 8
+  head_type: bigru
+  hidden_size: 16
+  num_layers: 1
+  dropout: 0.5
+  epochs: 10000
+  patience: 5
+  seed: 42
+  num_workers: 1
+  weight_decay: 0.01
+  mask_ratio: 0.1
+  emb_dir: embs/rdp/facebook/esm2_t36_3B_UR50D
+esm2_t48_15B_UR50D:
+  name: esm2_t48_15B_UR50D
+  lr: 0.001
+  batch_size: 8
+  head_type: bigru
+  hidden_size: 64
+  num_layers: 1
+  dropout: 0.5
+  epochs: 10000
+  patience: 5
+  seed: 42
+  num_workers: 1
+  weight_decay: 0.01
+  mask_ratio: 0.1
+  emb_dir: embs/rdp/facebook/esm2_t48_15B_UR50D
+prot_t5_xl_bfd:
+  name: prot_t5_xl_bfd
+  lr: 0.001
+  batch_size: 8
+  head_type: bigru
+  hidden_size: 16
+  num_layers: 1
+  dropout: 0.5
+  epochs: 10000
+  patience: 5
+  seed: 42
+  num_workers: 1
+  weight_decay: 0.01
+  mask_ratio: 0.1
+  emb_dir: embs/rdp/Rostlab/prot_t5_xl_bfd
+prot_t5_xl_half_uniref50-enc:
+  name: prot_t5_xl_half_uniref50-enc
+  lr: 0.001
+  batch_size: 32
+  head_type: bigru
+  hidden_size: 128
+  num_layers: 1
+  dropout: 0.5
+  epochs: 10000
+  patience: 5
+  seed: 42
+  num_workers: 1
+  weight_decay: 0.01
+  mask_ratio: 0.1
+  emb_dir: embs/rdp/Rostlab/prot_t5_xl_half_uniref50-enc
