@@ -2,6 +2,9 @@
 
 This is the official implementation of the paper ["Accurate and Fast Prediction of Intrinsically Disordered Protein by Multiple Protein Language Models and Ensemble Learning"](https://pubs.acs.org/doi/full/10.1021/acs.jcim.3c01202).
 
+## Freely available server 🎉
+Our IDP-ELM server is now available! [Access IDP-ELM](https://onodalab.ees.hokudai.ac.jp/idp-elm)
+
 ## Installation
 
 
